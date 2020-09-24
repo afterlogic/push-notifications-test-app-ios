@@ -24,6 +24,7 @@
 		DBA495F9250F88FC00CD090C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBA495FC250F88FC00CD090C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA495FE250F88FC00CD090C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA49604250F891000CD090C /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		DBA495EF250F88F800CD090C /* test */ = {
 			isa = PBXGroup;
 			children = (
+				DBA49604250F891000CD090C /* test.entitlements */,
 				DBA495F0250F88F800CD090C /* AppDelegate.swift */,
 				DBA495F2250F88F800CD090C /* SceneDelegate.swift */,
 				DBA495F4250F88F800CD090C /* ContentView.swift */,
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"test/Preview Content\"";
 				DEVELOPMENT_TEAM = J7AW6VHJK4;
@@ -293,7 +296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afterlogic.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"test/Preview Content\"";
 				DEVELOPMENT_TEAM = J7AW6VHJK4;
@@ -313,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afterlogic.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
